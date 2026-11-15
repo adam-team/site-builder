@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Варианты дизайна — тест для телесного терапевта</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600&family=IBM+Plex+Mono:wght@500&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: #EFEFF1;
+  color: #1D1D1F;
+  padding: 40px 20px 80px;
+}
+.head { max-width: 1180px; margin: 0 auto 40px; }
+.head h1 { font-family: 'Lora', serif; font-size: 30px; font-weight: 600; margin-bottom: 10px; }
+.head p { color: #6E6E73; font-size: 16px; line-height: 1.6; max-width: 640px; }
+.head code { background: #fff; padding: 2px 7px; border-radius: 6px; font-size: 14px; }
+
+.grid { max-width: 1180px; margin: 0 auto; display: grid; gap: 34px; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); }
+
+.variant h2 { font-size: 17px; font-weight: 600; margin-bottom: 4px; }
+.variant .note { font-size: 13.5px; color: #6E6E73; line-height: 1.5; margin-bottom: 14px; min-height: 42px; }
+
+/* Телефон */
+.phone {
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 10px 40px rgba(0,0,0,.10);
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--font-body, 'Inter', sans-serif);
+}
+.screen { padding: 28px 22px 26px; }
+.screen + .screen { border-top: 6px solid rgba(125,125,125,.12); }
+
+.badge {
+  display: inline-block; padding: 6px 12px; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent);
+  font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; letter-spacing: .12em; text-transform: uppercase;
+}
+.figure { width: 66px; margin: 20px auto 18px; display: block; }
+.title { font-family: var(--font-display); font-weight: 600; font-size: 20px; line-height: 1.2; text-align: center; letter-spacing: -.01em; }
+.sub { text-align: center; color: var(--ink-soft); font-size: 13.5px; line-height: 1.5; margin-top: 8px; }
+.rule { height: 1px; background: var(--line); width: 46px; margin: 20px auto; }
+.eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); text-align: center; }
+.eyebrow.soft { color: var(--ink-soft); }
+.btn { display: block; width: 100%; text-align: center; padding: 14px; border-radius: 15px; font-size: 14.5px; font-weight: 600; margin-top: 10px; }
+.btn-primary { background: var(--accent); color: var(--accent-ink); }
+.btn-ghost { background: var(--surface); color: var(--ink); border: 1px solid var(--line); }
+
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px; }
+.card h3 { font-family: var(--font-display); font-size: 16px; font-weight: 600; padding-bottom: 9px; border-bottom: 1px solid var(--line); margin-bottom: 10px; }
+.card p { font-size: 12.5px; line-height: 1.6; color: var(--ink-soft); }
+.map { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px; text-align: center; margin-top: 12px; }
+.map .t { font-family: var(--font-display); font-size: 15px; font-weight: 600; margin: 6px 0 10px; }
+.map .fig { width: 76px; margin: 0 auto 12px; display: block; }
+.map .n { background: var(--surface-2); border-radius: 12px; padding: 10px 12px; font-size: 11.5px; line-height: 1.5; color: var(--ink-soft); text-align: left; }
+.legend { display: flex; justify-content: center; gap: 14px; margin-top: 10px; font-size: 9.5px; color: var(--ink-soft); }
+.legend i { width: 7px; height: 7px; border-radius: 50%; display: inline-block; background: var(--heat); margin-right: 5px; }
+
+.step-number { font-family: var(--font-display); font-size: 34px; font-weight: 600; color: var(--accent); opacity: .18; line-height: 1; }
+.q-title { font-family: var(--font-display); font-size: 18px; font-weight: 600; margin: 2px 0 8px; }
+.q-desc { font-size: 12.5px; line-height: 1.55; color: var(--ink-soft); margin-bottom: 12px; }
+.field { background: var(--surface); border: 1px solid var(--line); border-radius: 13px; padding: 13px 14px; font-size: 13px; color: var(--ink-soft); min-height: 74px; }
+.chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
+.chip { padding: 8px 13px; border-radius: 999px; font-size: 12px; background: var(--surface); border: 1px solid var(--line); }
+.chip.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+
+/* ───── Темы ───── */
+.warm {
+  --page:#F5F1EA; --surface:#FFFDF9; --surface-2:#F3EEE4; --line:#E0D7C6;
+  --ink:#2B2A26; --ink-soft:#6E6759; --accent:#4B6B4F; --accent-ink:#fff;
+  --accent-soft:rgba(75,107,79,.10); --heat:#E07A3F; --figure:#B9AF9C;
+  --font-display:'Lora',serif;
+}
+.dark {
+  --page:#14150F; --surface:#1C1E16; --surface-2:#23261C; --line:#333628;
+  --ink:#EDEAE3; --ink-soft:#9C9A8C; --accent:#C9A227; --accent-ink:#14150F;
+  --accent-soft:rgba(201,162,39,.12); --heat:#F08A47; --figure:#6B6E5C;
+  --font-display:'Lora',serif;
+}
+.clinic {
+  --page:#F1F5F4; --surface:#FFFFFF; --surface-2:#EFF4F3; --line:#DCE5E3;
+  --ink:#16211F; --ink-soft:#5F6D6A; --accent:#3E7C74; --accent-ink:#fff;
+  --accent-soft:rgba(62,124,116,.10); --heat:#E07A3F; --figure:#A9BDB9;
+  --font-display:'Inter',sans-serif;
+}
+.ios {
+  --page:#F2F2F7; --surface:#FFFFFF; --surface-2:#F2F2F7; --line:#E2E2E7;
+  --ink:#1D1D1F; --ink-soft:#86868B; --accent:#007AFF; --accent-ink:#fff;
+  --accent-soft:rgba(0,122,255,.10); --heat:#E07A3F; --figure:#C7C7CC;
+  --font-display:'Inter',sans-serif;
+}
+</style>
+</head>
+<body>
+
+<div class="head">
+  <h1>Четыре варианта оформления</h1>
+  <p>Содержание, вопросы и телесная карта во всех вариантах одинаковые — отличается только оформление.
+  На живом сайте вариант переключается адресом: <code>?theme=warm</code>, <code>?theme=dark</code>,
+  <code>?theme=clinic</code>, <code>?theme=ios</code>. Напишите, какой берём — оставлю его основным.</p>
+</div>
+
+<div class="grid" id="grid"></div>
+
+<script>
+const FIGURE = (strong, weak) => `
+<svg viewBox="0 0 200 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><radialGradient id="g${strong}${weak}" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="var(--heat)" stop-opacity=".95"/>
+    <stop offset="100%" stop-color="var(--heat)" stop-opacity="0"/>
+  </radialGradient></defs>
+  <g stroke="var(--figure)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="100" cy="35" r="26"/>
+    <path d="M92,58 L92,70 Q100,76 108,70 L108,58"/>
+    <path d="M70,80 Q100,66 130,80 L136,178 Q100,196 64,178 Z"/>
+    <path d="M70,82 Q40,110 35,190"/><path d="M130,82 Q160,110 165,190"/>
+    <circle cx="35" cy="197" r="7"/><circle cx="165" cy="197" r="7"/>
+    <path d="M78,193 L72,395"/><path d="M122,193 L128,395"/>
+    <path d="M72,395 L60,412"/><path d="M128,395 L140,412"/>
+  </g>
+  <circle cx="100" cy="46" r="20" fill="url(#g${strong}${weak})" opacity=".85"/>
+  <circle cx="68" cy="83" r="18" fill="url(#g${strong}${weak})" opacity=".38"/>
+  <circle cx="132" cy="83" r="18" fill="url(#g${strong}${weak})" opacity=".38"/>
+</svg>`;
+
+const VARIANTS = [
+  { cls: 'warm', name: '1. Тёплый терапевтичный',
+    note: 'Песочный фон, серифные заголовки, зелёный акцент. Спокойный, «про тело и бережность» — как на сайте «К корню».' },
+  { cls: 'dark', name: '2. Тёмный премиум',
+    note: 'Угольный фон, золотой акцент. Дорого и статусно, зоны напряжения светятся особенно ярко.' },
+  { cls: 'clinic', name: '3. Светлый клинический',
+    note: 'Белый фон, мягкий сине-зелёный, крупная типографика без серифа. Чисто, спокойно, по-медицински.' },
+  { cls: 'ios', name: '4. Как на вашем сайте',
+    note: 'iOS-синий и светло-серый фон — оформление вашего нынешнего теста, плюс телесная карта в конце.' },
+];
+
+document.getElementById('grid').innerHTML = VARIANTS.map((v, i) => `
+<div class="variant">
+  <h2>${v.name}</h2>
+  <div class="note">${v.note}</div>
+  <div class="phone ${v.cls}">
+
+    <div class="screen">
+      <div style="text-align:center"><span class="badge">3 сферы · 8 шагов · 5 минут</span></div>
+      <div class="figure">${FIGURE('a', i)}</div>
+      <div class="title">Первопричина ваших состояний — в теле</div>
+      <div class="sub">Тест покажет, где живёт напряжение и что за ним стоит</div>
+      <div class="rule"></div>
+      <div class="eyebrow soft">Тілді таңдаңыз · Выберите язык</div>
+      <a class="btn btn-primary">Русский</a>
+      <a class="btn btn-ghost">Қазақша</a>
+    </div>
+
+    <div class="screen">
+      <div class="step-number">03</div>
+      <div class="q-title">Здоровье</div>
+      <div class="q-desc">Опишите вашу проблему со здоровьем — например, псориаз, частые мигрени, боли в спине.</div>
+      <div class="field">Сюда напишите свою проблему со здоровьем</div>
+      <div class="chips">
+        <span class="chip on">Страх</span><span class="chip">Гнев</span>
+        <span class="chip on">Обида</span><span class="chip">Вина</span><span class="chip">Стыд</span>
+      </div>
+      <a class="btn btn-primary" style="margin-top:16px">Получить глубокий разбор</a>
+    </div>
+
+    <div class="screen">
+      <div class="eyebrow" style="margin-bottom:10px">Ваш персональный разбор</div>
+      <div class="card">
+        <h3>1. Физическая блокировка</h3>
+        <p><b>Маркер:</b> Головные боли, давление и мигрени. Голова — наш центр контроля, и сильная боль физически
+        останавливает человека, заставляя лечь.</p>
+      </div>
+      <div class="map">
+        <div class="eyebrow">Где живёт напряжение</div>
+        <div class="t">Телесная карта результата</div>
+        <div class="fig">${FIGURE('b', i)}</div>
+        <div class="n">Чаще всего напряжение живёт в челюсти (сжатый контроль) и плечах (привычка держать всё на себе).</div>
+        <div class="legend"><span><i></i>сильнее</span><span><i style="opacity:.4"></i>слабее</span></div>
+      </div>
+      <a class="btn btn-primary" style="margin-top:12px">Записаться на консультацию</a>
+      <a class="btn btn-ghost">Бесплатные уроки</a>
+    </div>
+
+  </div>
+</div>`).join('');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "site-builder-tools",
+  "private": true,
+  "type": "module",
+  "description": "Запись видео-превью дизайнов для галереи (puppeteer-core + системный Chrome + ffmpeg)",
+  "scripts": { "previews": "node record-previews.mjs" },
+  "dependencies": { "puppeteer-core": "^23.11.1" }
+}

@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D-анализ — личность, предназначение и здоровье</title>
+  <meta name="description" content="Авторский 3D-анализ доктора Айши Аятхановны: личность, предназначение и состояние организма.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ФОН: звёздное небо + затемнение -->
+  <canvas id="sky"></canvas>
+  <div class="veil"></div>
+
+  <!-- ВЕРХНЯЯ ПАНЕЛЬ -->
+  <header class="hud">
+    <div class="brand"><span class="dot"></span>3D-АНАЛИЗ</div>
+    <div class="odo"><span>МАРШРУТ</span><span>ЭТАП <b id="odoNum">0</b>/4</span></div>
+    <a href="#final" class="cta-mini">Записаться</a>
+  </header>
+
+  <!-- ЛИНИЯ МАРШРУТА (рисуется при скролле) -->
+  <svg class="route" id="route" aria-hidden="true"></svg>
+
+  <main>
+
+    <!-- ===== 1. ГЛАВНЫЙ ЭКРАН ===== -->
+    <section class="hero">
+      <div class="tag reveal"><span class="ln"></span>Авторский метод доктора Айши Аятхановны</div>
+      <h1 class="reveal">Узнайте себя <span class="g">глубже</span><br>— и верните <span class="g">энергию</span></h1>
+      <p class="sub reveal">3D-анализ на стыке медицины, психологии и самопознания. Листайте вниз — и пройдите путь от «живу на автомате» к жизни, где вы понимаете себя и своё тело.</p>
+      <div class="scrollhint reveal"><span class="m"></span>ЛИСТАЙТЕ ВНИЗ · НАЧИНАЕМ</div>
+    </section>
+
+    <!-- ===== 2. ЦИФРЫ ===== -->
+    <section class="intro">
+      <div class="tag reveal"><span class="ln"></span>Три измерения — одна картина</div>
+      <h2 class="big reveal">Тест покажет, где вы сейчас — и куда направить силы</h2>
+      <div class="stats">
+        <div class="stat reveal"><div class="n"><span data-count="260">0</span><span class="u">вопросов</span></div><div class="l">в полном тесте — 30 минут честных ответов</div></div>
+        <div class="stat reveal"><div class="n"><span data-count="3">0</span><span class="u">уровня</span></div><div class="l">личность, предназначение и здоровье</div></div>
+        <div class="stat reveal"><div class="n"><span data-count="1">0</span><span class="u">разбор</span></div><div class="l">с врачом и конкретными рекомендациями</div></div>
+      </div>
+    </section>
+
+    <!-- ===== 3. ЭТАП 01 — РАДАР ===== -->
+    <section class="stage split" data-stage="1">
+      <div class="tx reveal">
+        <div class="no">Этап 01 · Тест</div>
+        <h2>Где вы сейчас?</h2>
+        <p>Тест из 260 вопросов показывает сильные стороны и зоны, где энергия утекает. Честная карта, а не диагноз.</p>
+        <span class="days"><b>30 минут</b> · калибровка</span>
+      </div>
+      <div class="visual reveal">
+        <canvas id="radarCv" width="840" height="840"></canvas>
+      </div>
+    </section>
+
+    <!-- ===== 4. ЭТАП 02 — ТУМАН ===== -->
+    <section class="stage dust" data-stage="2">
+      <div class="dustfog" aria-hidden="true"><i class="d1"></i><i class="d2"></i><i class="d3"></i><i class="d4"></i><i class="d5"></i></div>
+      <div class="tx reveal">
+        <div class="no">Этап 02 · Разбор</div>
+        <h2>Что забирает вашу энергию?</h2>
+        <p>На разборе находим блоки, Синдром Самозванца, ограничивающие убеждения и связь внутреннего состояния со здоровьем. Мягко, без оценок.</p>
+        <span class="days"><b>Zoom</b> · пн, ср, пт в 19:30 по Астане</span>
+      </div>
+    </section>
+
+    <!-- ===== 5. ЭТАП 03 — ЧАТ ===== -->
+    <section class="stage split" data-stage="3">
+      <div class="tx reveal">
+        <div class="no">Этап 03 · Предназначение</div>
+        <h2>Чего вы хотите на самом деле?</h2>
+        <p>Отделяем свои желания от чужих ожиданий. Видим таланты и потенциал, который давно ждёт, когда вы его включите.</p>
+        <span class="days"><b>Таланты</b> · потенциал · направление</span>
+      </div>
+      <div class="visual reveal">
+        <div class="chat">
+          <div class="chat-head">
+            <div class="av">А</div>
+            <div class="nm"><div class="t">Айша Аятхановна</div><div class="s"><i class="on"></i>онлайн · врач, автор 3D-анализа</div></div>
+            <div class="rd"></div>
+          </div>
+          <div class="chat-body">
+            <div class="msg usr m1">Знаний много, а реализации нет…</div>
+            <div class="msg doc m2">Так бывает, когда потенциал есть, а энергии тела не хватает. Давайте посмотрим на ваши результаты.</div>
+            <div class="msg usr m3">…и я всё время сомневаюсь в себе</div>
+            <div class="msg doc m4">Это Синдром Самозванца. С него и начнём — он снимается.</div>
+            <div class="typing"><i></i><i></i><i></i></div>
+          </div>
+          <div class="chat-foot"><div class="in">Напишите вопрос…</div><div class="snd"><svg viewBox="0 0 24 24" fill="none" stroke="#06210a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. ЭТАП 04 — ПЛАН (телефон) ===== -->
+    <section class="stage split plan" data-stage="4">
+      <div class="tx reveal">
+        <div class="no">Этап 04 · План</div>
+        <h2>Ваш <span class="g">маршрут</span> к себе</h2>
+        <p>Получаете конкретные рекомендации: система 5С (Сон, Стул, Спорт, Солнце, Секс), чекап здоровья, работа с убеждениями. Персонально, не по шаблону.</p>
+        <span class="days"><b>5С</b> · маленький шаг каждый день</span>
+      </div>
+      <div class="visual reveal">
+        <div class="dash">
+          <div class="pill-streak">🔥 серия 21 день</div>
+          <div class="phone">
+            <div class="notch"></div>
+            <div class="scr">
+              <div class="aphead"><span class="t">Мой план</span><span class="s">система 5С</span></div>
+              <div class="ring">
+                <svg width="112" height="112" viewBox="0 0 112 112"><circle class="rc rb" cx="56" cy="56" r="48"/><circle class="rc rf" cx="56" cy="56" r="48" data-pct="68"/></svg>
+                <div class="lbl"><div class="pc"><span class="ringNum">0</span><span class="u">%</span></div><div class="sub">энергия</div></div>
+              </div>
+              <div class="spheres">
+                <div class="sph"><div class="top"><span class="nm">Сон</span><span class="vl">74%</span></div><div class="bar"><i data-w="74"></i></div></div>
+                <div class="sph cyan"><div class="top"><span class="nm">Спорт</span><span class="vl">52%</span></div><div class="bar"><i data-w="52"></i></div></div>
+                <div class="sph"><div class="top"><span class="nm">Солнце</span><span class="vl">63%</span></div><div class="bar"><i data-w="63"></i></div></div>
+                <div class="sph cyan"><div class="top"><span class="nm">Питание</span><span class="vl">41%</span></div><div class="bar"><i data-w="41"></i></div></div>
+              </div>
+              <div class="stepday"><span class="chk"></span><div class="tx2"><div class="l1">Шаг дня выполнен</div><div class="l2">Лечь спать до 23:00</div></div></div>
+            </div>
+          </div>
+          <div class="fcard fc-line"><div class="ct">Энергия · <b>за 2 месяца</b></div><canvas id="lineCv" width="420" height="150"></canvas><div class="lg"><span><i style="background:var(--acc)"></i>Тело</span><span><i style="background:var(--cyan)"></i>Состояние</span></div></div>
+          <div class="fcard fc-bars"><div class="ct">Шаги по неделям</div><div class="bwrap"><i data-h="30"></i><i data-h="42"></i><i data-h="38"></i><i data-h="55" class="cy"></i><i data-h="61"></i><i data-h="70"></i><i data-h="84" class="cy"></i><i data-h="92"></i></div><div class="bxl"><span>нед 1</span><span>нед 8</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 7. ЧТО ВЫ ПОЛУЧИТЕ ===== -->
+    <section class="board">
+      <h2 class="reveal">Что вы получите</h2>
+      <div class="cards">
+        <div class="card reveal"><div class="ic">🧠</div><h3>Личность</h3><p>Сильные стороны, внутренние ограничения и точки роста.</p></div>
+        <div class="card reveal"><div class="ic">🌱</div><h3>Предназначение</h3><p>Таланты, потенциал и жизненное направление.</p></div>
+        <div class="card reveal"><div class="ic">🏥</div><h3>Здоровье</h3><p>Как внутреннее состояние отражается на организме.</p></div>
+        <div class="card reveal"><div class="ic">📄</div><h3>Документ с результатами</h3><p>Всё, что выявили на разборе — у вас на руках.</p></div>
+        <div class="card reveal"><div class="ic">🎥</div><h3>Видео и аудиозапись</h3><p>Можно пересматривать и возвращаться к рекомендациям.</p></div>
+        <div class="card reveal"><div class="ic">⚡</div><h3>Система 5С</h3><p>Пошаговое восстановление энергии тела.</p></div>
+        <div class="card reveal"><div class="ic">🤝</div><h3>Наставничество</h3><p>2 месяца, 8 встреч — решение главного запроса.</p></div>
+      </div>
+    </section>
+
+    <!-- ===== 8. МИНИ-ТРЕНАЖЁР ===== -->
+    <section class="mini">
+      <div class="head reveal">
+        <h2>Пора взять управление<br><span class="g">в свои руки</span></h2>
+        <p>Попробуйте прямо сейчас на одной сфере: заметить → назвать → сделать маленький шаг.</p>
+      </div>
+      <div class="panel reveal">
+        <div class="mp-top"><span class="radar"></span>Мини-анализ · за 2 минуты</div>
+        <div class="mp-step">Шаг 1 · выберите сферу</div>
+        <div class="chips" id="chips"></div>
+
+        <div class="mp-b" id="stepB">
+          <div class="inner">
+            <div class="mp-step">Шаг 2 · что сейчас откликается?</div>
+            <div class="opts" id="opts"></div>
+            <div class="mp-go">
+              <button class="btn2" id="goBtn" disabled>Получить мини-задание</button>
+              <span class="mp-hint">отметьте хотя бы один пункт</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mp-c" id="stepC">
+          <div class="inner">
+            <div class="sig"><span class="d"></span>Сигнал принят · расшифровка</div>
+            <p class="reflect" id="reflect"></p>
+            <div class="mission"><div class="mt">Ваше задание на сегодня</div><p id="mission"></p></div>
+            <p class="mp-note">Это только одна сфера. Полную картину — личность, таланты и здоровье — покажет 3D-тест и разбор.</p>
+            <a href="https://vite-react-kappa-six-11.vercel.app" target="_blank" class="btn2">Пройти полный тест</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 9. ТЕСТЫ ===== -->
+    <section class="free">
+      <div class="panel glow reveal">
+        <div class="tag"><span class="ln"></span>Бесплатно</div>
+        <h2>Пройдите тест — и запишитесь на разбор</h2>
+        <p>Выберите формат: полный тест на 30 минут или экспресс-тест за 2–3 минуты.</p>
+        <div class="btns">
+          <a href="https://vite-react-kappa-six-11.vercel.app" target="_blank" class="btn2">Полный тест · 260 вопросов</a>
+          <a href="https://3d-test-mini.vercel.app/" target="_blank" class="btn2 ghost">Экспресс-тест · 60 вопросов</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 10. КТО ВЕДЁТ ===== -->
+    <section class="about">
+      <div class="about-grid">
+        <div class="photo reveal"><!-- замените на <img src="photo.jpg" alt="Айша Аятхановна"> --><span>Фото</span></div>
+        <div class="tx reveal">
+          <h2>Кто ведёт</h2>
+          <p>Я — Айша Аятхановна. Врач с многолетним опытом в женском здоровье: маммология, гинекология, онкогинекология. Руководитель собственной клиники.</p>
+          <p>За годы практики я поняла: здоровье зависит не только от анализов и препаратов. Огромную роль играют мышление, эмоции, стресс и образ жизни. Поэтому я создала авторский 3D-анализ личности, предназначения и здоровья.</p>
+          <div class="sign">Айша Аятхановна · врач, онколог-маммолог, автор 3D-анализа</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 11. ЗАЯВКА ===== -->
+    <section class="lead">
+      <div class="panel reveal">
+        <h2>Оставить заявку</h2>
+        <p class="lead-sub">Оставьте контакт — и мы свяжемся с вами.</p>
+        <form id="leadForm">
+          <div class="fields">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="text" name="contact" placeholder="Телефон или Telegram" required>
+          </div>
+          <textarea name="request" rows="3" placeholder="Ваш запрос (необязательно)"></textarea>
+          <label class="agree"><input type="checkbox" required><span class="bx"></span>Я соглашаюсь на обработку персональных данных</label>
+          <button class="btn2" type="submit">Отправить заявку</button>
+          <div class="form-ok" id="formOk">Спасибо! Заявка принята — скоро свяжемся.</div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== 12. ФИНАЛ ===== -->
+    <section class="final" id="final">
+      <div class="tag reveal"><span class="ln"></span>Ближайший разбор</div>
+      <h2 class="big reveal">Пн · Ср · Пт — <span class="g">19:30</span> по Астане</h2>
+      <p class="sub reveal">Бесплатный групповой разбор в Zoom: 6–7 человек, по очереди. Пройдите тест и напишите нам — пришлём ссылку на эфир.</p>
+      <div class="btns reveal">
+        <a href="https://t.me/dr_aisha_ayat" target="_blank" class="btn2">Записаться на разбор</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>3D-анализ · Айша Аятхановна · <a href="https://t.me/dr_aisha_ayat" target="_blank">t.me/dr_aisha_ayat</a></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

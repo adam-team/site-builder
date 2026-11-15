@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Конструктор структуры сайта</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<style>
+:root{--bg:#f6f5f2;--card:#fff;--text:#171717;--muted:#6b6b6b;--line:#e4e2dc;--brand:#ff3b45;--ok:#1f9d61;--soft:#fff0f1}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#111;--card:#1c1c1e;--text:#f1f1f1;--muted:#a3a3a3;--line:#2f2f31;--soft:#2a1416}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;font-size:15px}
+button{font:inherit;color:inherit;cursor:pointer}
+.top{padding:28px 20px 8px;max-width:1280px;margin:0 auto}
+.top h1{margin:0 0 6px;font-size:clamp(24px,3.5vw,34px);letter-spacing:-.02em}
+.top p{margin:0;color:var(--muted);max-width:760px}
+.steps{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.steps span{background:var(--card);border:1px solid var(--line);border-radius:30px;padding:6px 12px;font-weight:700;font-size:13px;color:var(--muted)}
+.steps span.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+.lay{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:20px;max-width:1280px;margin:0 auto;padding:16px 20px 60px}
+@media (max-width:900px){.lay{grid-template-columns:1fr}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin-bottom:16px}
+.box h2{margin:0 0 4px;font-size:18px}
+.box .hint{margin:0 0 14px;color:var(--muted);font-size:14px}
+.opts{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.opt{text-align:left;background:var(--bg);border:2px solid transparent;border-radius:14px;padding:12px 14px;font-weight:700;line-height:1.3}
+.opt small{display:block;font-weight:500;color:var(--muted);margin-top:4px;font-size:12.5px}
+.opt.on{border-color:var(--brand);background:var(--soft)}
+.blocks{display:grid;gap:8px}
+.blk{display:flex;align-items:center;gap:10px;background:var(--bg);border-radius:12px;padding:10px 12px;border:1px solid transparent}
+.blk.off{opacity:.45}
+.blk input{width:20px;height:20px;accent-color:var(--brand);flex:none}
+.blk .t{flex:1;min-width:0}
+.blk .t b{display:block}
+.blk .t small{color:var(--muted)}
+.blk .mv{display:flex;gap:4px}
+.blk .mv button{border:1px solid var(--line);background:var(--card);border-radius:8px;width:30px;height:30px}
+.blk .n{width:26px;height:26px;border-radius:8px;background:var(--text);color:var(--bg);display:grid;place-items:center;font-weight:800;font-size:12px;flex:none}
+.blk.off .n{background:var(--line);color:var(--muted)}
+textarea,input[type=text]{width:100%;font:inherit;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--text)}
+.pages{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.pages span{background:var(--bg);border-radius:9px;padding:6px 10px;font-weight:700;font-size:13px}
+.sticky{position:sticky;top:16px}
+.phone{background:var(--text);border-radius:34px;padding:12px;max-width:340px;margin:0 auto}
+.screen{background:#fff;border-radius:24px;overflow:hidden;max-height:560px;overflow-y:auto;scrollbar-width:none}
+.wf{padding:14px;border-bottom:1px dashed #e5e5e5;color:#222;font-size:12px}
+.wf b{display:block;font-size:12px;margin-bottom:6px;color:#999;text-transform:uppercase;letter-spacing:.06em}
+.bar{height:8px;border-radius:4px;background:#e9e9e9;margin:5px 0}
+.bar.dark{background:#bbb}.bar.w6{width:60%}.bar.w4{width:40%}.bar.w8{width:80%}
+.btnwf{display:inline-block;height:18px;width:90px;border-radius:9px;background:var(--brand);margin-top:6px}
+.row3{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.row3 i{display:block;height:40px;border-radius:8px;background:#f0f0f0}
+.pic{height:90px;border-radius:10px;background:linear-gradient(135deg,#ffd6d9,#d9e4ff)}
+.out{white-space:pre-wrap;font-size:13.5px;background:var(--bg);border-radius:12px;padding:14px;max-height:260px;overflow:auto;margin:0}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.btn{border:0;border-radius:12px;padding:12px 16px;font-weight:800;background:var(--text);color:var(--bg)}
+.btn.sec{background:var(--bg);color:var(--text);border:1px solid var(--line)}
+.toast{position:fixed;top:16px;left:50%;transform:translateX(-50%);background:var(--ok);color:#fff;font-weight:800;padding:10px 18px;border-radius:10px;opacity:0;transition:opacity .3s;pointer-events:none}
+.toast.on{opacity:1}
+</style>
+</head>
+<body>
+<div class="top">
+  <h1>Конструктор структуры сайта</h1>
+  <p>Собери, из каких блоков будет сайт и в каком порядке. Слева выбираешь, справа сразу видно, как это будет выглядеть на телефоне. В конце нажми «Скопировать для агента» и отправь в чат.</p>
+  <div class="steps"><span>1. Тема</span><span class="on">2. Структура</span><span>3. Дизайн</span><span>4. Тексты</span><span>5. Сборка</span><span>6. Запуск</span></div>
+</div>
+<div class="lay">
+  <div>
+    <div class="box">
+      <h2>У тебя уже есть структура?</h2>
+      <p class="hint">Если есть план сайта (список блоков, пример сайта, документ), вставь его ниже. Если нет, просто выбери тему: структуру предложим сами.</p>
+      <div class="opts" id="have">
+        <button class="opt on" data-v="no">Нет, давай соберём вместе<small>выберу тему и блоки</small></button>
+        <button class="opt" data-v="yes">Да, у меня есть план<small>вставлю текст или ссылку</small></button>
+      </div>
+      <textarea id="own" rows="5" placeholder="Например: первый экран с фото, обо мне, 3 услуги, отзывы, цены, контакты. Или ссылка на сайт, который нравится." style="display:none;margin-top:12px"></textarea>
+    </div>
+    <div class="box">
+      <h2>Тема сайта</h2>
+      <p class="hint">Выбери ближе всего к своей. Блоки подставятся автоматически, потом можно поменять.</p>
+      <div class="opts" id="presets"></div>
+    </div>
+    <div class="box">
+      <h2>Размер</h2>
+      <p class="hint">Начать лучше с одной страницы: её быстрее запустить и проще продавать.</p>
+      <div class="opts" id="sizes"></div>
+      <div id="pagesWrap" style="display:none;margin-top:12px"><b>Страницы:</b><div class="pages" id="pages"></div></div>
+    </div>
+    <div class="box">
+      <h2>Блоки и порядок</h2>
+      <p class="hint">Галочка: блок нужен. Стрелки меняют порядок. Первый экран всегда сверху, контакты обычно в конце.</p>
+      <div class="blocks" id="blocks"></div>
+    </div>
+    <div class="box">
+      <h2>Название и цель</h2>
+      <p class="hint">Как называется проект и что должен сделать посетитель (записаться, купить, написать в WhatsApp).</p>
+      <input type="text" id="name" placeholder="Название, например: Студия Lumi">
+      <input type="text" id="goal" placeholder="Главное действие, например: записаться на консультацию" style="margin-top:8px">
+    </div>
+  </div>
+  <div>
+    <div class="sticky">
+      <div class="box">
+        <h2>Как это будет на телефоне</h2>
+        <p class="hint">Схема без дизайна: только порядок блоков. Дизайн выберешь на следующем шаге в Дизайн-теке.</p>
+        <div class="phone"><div class="screen" id="wire"></div></div>
+      </div>
+      <div class="box">
+        <h2>Готовая структура</h2>
+        <pre class="out" id="out"></pre>
+        <div class="actions">
+          <button class="btn" onclick="copyOut()">Скопировать для агента</button>
+          <button class="btn sec" onclick="download()">Скачать structure.json</button>
+          <a class="btn sec" href="../gallery/index.html" style="text-decoration:none">Дальше: выбрать дизайн →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="presets.js"></script>
+<script>
+var P = window.PRESETS, S = {have:"no", preset:"expert", size:"full", order:[], on:{}};
+function store(v){ try{ if(v===undefined) return JSON.parse(localStorage.getItem("sb-structure")||"null"); localStorage.setItem("sb-structure", JSON.stringify(v)) }catch(e){ return null } }
+function esc(s){ return String(s||"").replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]}) }
+
+function applyPreset(id){
+  S.preset = id;
+  var pb = P.presets[id].blocks;
+  S.order = pb.concat(Object.keys(P.blocks).filter(function(b){ return pb.indexOf(b)<0 }));
+  S.on = {}; pb.forEach(function(b){ S.on[b]=true });
+  if(S.size==="mini") trimMini();
+}
+function trimMini(){ var keep=["hero","about","services","testimonials","contacts","program","benefits"]; var n=0;
+  S.order.forEach(function(b){ if(S.on[b] && (b==="hero"||b==="contacts"|| (keep.indexOf(b)>=0 && n<3 && ++n))) {} else if(S.on[b] && b!=="hero" && b!=="contacts") S.on[b]=false }) }
+
+function renderOpts(){
+  document.getElementById("presets").innerHTML = Object.keys(P.presets).map(function(k){ var p=P.presets[k];
+    return '<button class="opt'+(S.preset===k?" on":"")+'" data-v="'+k+'">'+esc(p.name)+'<small>'+p.blocks.length+' блоков</small></button>' }).join("");
+  document.getElementById("sizes").innerHTML = Object.keys(P.sizes).map(function(k){ var s=P.sizes[k];
+    return '<button class="opt'+(S.size===k?" on":"")+'" data-v="'+k+'">'+esc(s.name)+'<small>'+esc(s.note)+'</small></button>' }).join("");
+  [].forEach.call(document.querySelectorAll("#have .opt"), function(b){ b.classList.toggle("on", b.dataset.v===S.have) });
+  document.getElementById("own").style.display = S.have==="yes" ? "block" : "none";
+  document.getElementById("pagesWrap").style.display = S.size==="multi" ? "block" : "none";
+  document.getElementById("pages").innerHTML = P.presets[S.preset].pages.map(function(p){ return "<span>"+esc(p)+"</span>" }).join("");
+}
+function renderBlocks(){
+  var i = 0;
+  document.getElementById("blocks").innerHTML = S.order.map(function(b, idx){ var on=!!S.on[b]; if(on) i++;
+    return '<div class="blk'+(on?"":" off")+'"><span class="n">'+(on?i:"–")+'</span><input type="checkbox" data-b="'+b+'"'+(on?" checked":"")+(b==="hero"?" disabled":"")+'>'+
+      '<div class="t"><b>'+esc(P.blocks[b].name)+'</b><small>'+esc(P.blocks[b].why)+'</small></div>'+
+      '<div class="mv"><button data-up="'+idx+'" title="Выше">↑</button><button data-down="'+idx+'" title="Ниже">↓</button></div></div>' }).join("");
+}
+var WF = {
+  hero:'<div class="bar dark w8"></div><div class="bar w6"></div><span class="btnwf"></span><div class="pic" style="margin-top:8px"></div>',
+  trust:'<div class="row3"><i style="height:16px"></i><i style="height:16px"></i><i style="height:16px"></i></div>',
+  about:'<div class="pic" style="height:70px"></div><div class="bar dark w6"></div><div class="bar"></div><div class="bar w8"></div>',
+  benefits:'<div class="row3"><i></i><i></i><i></i></div>', services:'<div class="row3"><i></i><i></i><i></i></div><div class="row3" style="margin-top:6px"><i></i><i></i><i></i></div>',
+  process:'<div class="bar w4"></div><div class="bar w6"></div><div class="bar w8"></div><div class="bar"></div>',
+  stats:'<div class="row3"><i style="background:#ffd6d9"></i><i style="background:#ffd6d9"></i><i style="background:#ffd6d9"></i></div>',
+  gallery:'<div class="row3"><i style="height:60px"></i><i style="height:60px"></i><i style="height:60px"></i></div>',
+  program:'<div class="bar dark"></div><div class="bar dark"></div><div class="bar dark"></div>',
+  testimonials:'<div class="row3"><i style="height:50px"></i><i style="height:50px"></i><i style="height:50px"></i></div>',
+  pricing:'<div class="row3"><i style="height:70px"></i><i style="height:70px;background:#222"></i><i style="height:70px"></i></div>',
+  team:'<div class="row3"><i style="border-radius:50%;height:44px;width:44px"></i><i style="border-radius:50%;height:44px;width:44px"></i><i style="border-radius:50%;height:44px;width:44px"></i></div>',
+  faq:'<div class="bar"></div><div class="bar"></div><div class="bar"></div>',
+  cta:'<div style="background:var(--brand);border-radius:10px;padding:12px"><div class="bar w6" style="background:#fff8"></div></div>',
+  contacts:'<div class="bar w6"></div><div class="bar w6"></div><div class="bar" style="height:30px"></div>'
+};
+function active(){ return S.order.filter(function(b){ return S.on[b] }) }
+function renderWire(){
+  document.getElementById("wire").innerHTML = active().map(function(b){ return '<div class="wf"><b>'+esc(P.blocks[b].name)+'</b>'+WF[b]+'</div>' }).join("");
+}
+function result(){
+  var p = P.presets[S.preset], a = active(), name = document.getElementById("name").value.trim(), goal = document.getElementById("goal").value.trim();
+  var lines = ["Моя структура сайта", "Тема: "+p.name+" ("+S.preset+")", "Размер: "+P.sizes[S.size].name];
+  if(name) lines.push("Название: "+name);
+  if(goal) lines.push("Главное действие: "+goal);
+  if(S.size==="multi") lines.push("Страницы: "+p.pages.join(", "));
+  lines.push("Блоки по порядку:");
+  a.forEach(function(b,i){ lines.push("  "+(i+1)+". "+P.blocks[b].name+" ["+b+"]") });
+  var own = document.getElementById("own").value.trim();
+  if(S.have==="yes" && own) lines.push("Мой план (дословно):", own);
+  return lines.join("\n");
+}
+function json(){ return JSON.stringify({preset:S.preset, size:S.size, blocks:active(), pages:S.size==="multi"?P.presets[S.preset].pages:["Главная"],
+  name:document.getElementById("name").value.trim(), goal:document.getElementById("goal").value.trim(), own_plan:S.have==="yes"?document.getElementById("own").value.trim():""}, null, 2) }
+function renderAll(){ renderOpts(); renderBlocks(); renderWire(); document.getElementById("out").textContent = result(); store({S:S, name:document.getElementById("name").value, goal:document.getElementById("goal").value, own:document.getElementById("own").value}) }
+
+document.getElementById("have").onclick = function(e){ var b=e.target.closest(".opt"); if(!b) return; S.have=b.dataset.v; renderAll() };
+document.getElementById("presets").onclick = function(e){ var b=e.target.closest(".opt"); if(!b) return; applyPreset(b.dataset.v); renderAll() };
+document.getElementById("sizes").onclick = function(e){ var b=e.target.closest(".opt"); if(!b) return; S.size=b.dataset.v; applyPreset(S.preset); renderAll() };
+document.getElementById("blocks").onclick = function(e){
+  var t=e.target, i;
+  if(t.dataset.b){ S.on[t.dataset.b]=t.checked; renderAll(); return }
+  if(t.dataset.up!==undefined){ i=+t.dataset.up; if(i>1){ var x=S.order[i]; S.order[i]=S.order[i-1]; S.order[i-1]=x; renderAll() } }
+  if(t.dataset.down!==undefined){ i=+t.dataset.down; if(i>0 && i<S.order.length-1){ var y=S.order[i]; S.order[i]=S.order[i+1]; S.order[i+1]=y; renderAll() } }
+};
+["name","goal","own"].forEach(function(id){ document.getElementById(id).oninput = renderAll });
+function toast(t){ var el=document.getElementById("toast"); el.textContent=t; el.classList.add("on"); setTimeout(function(){ el.classList.remove("on") },2200) }
+function copyOut(){ var t=result(); (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){ toast("Скопировано. Вставь в чат с агентом") },function(){ prompt("Скопируй и отправь агенту:", t) }) }
+function download(){ var a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([json()],{type:"application/json"})); a.download="structure.json"; a.click() }
+
+var saved = store();
+if(saved && saved.S && P.presets[saved.S.preset]){ S=saved.S; document.getElementById("name").value=saved.name||""; document.getElementById("goal").value=saved.goal||""; document.getElementById("own").value=saved.own||"" }
+else applyPreset("expert");
+renderAll();
+</script>
+</body>
+</html>

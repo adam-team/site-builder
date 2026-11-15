@@ -1,0 +1,595 @@
+[
+ {
+  "name": "Manrope",
+  "pkg": "@fontsource/manrope",
+  "type": "sans",
+  "kk": false,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800
+  ],
+  "note": "современный, хорошо читается на телефоне",
+  "kk_alt": "Onest"
+ },
+ {
+  "name": "Montserrat",
+  "pkg": "@fontsource/montserrat",
+  "type": "sans",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "note": "уверенный, крупные заголовки",
+  "kk_alt": null
+ },
+ {
+  "name": "Inter",
+  "pkg": "@fontsource/inter",
+  "type": "sans",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800
+  ],
+  "note": "нейтральный интерфейсный",
+  "kk_alt": null
+ },
+ {
+  "name": "Inter Tight",
+  "pkg": "@fontsource/inter-tight",
+  "type": "sans",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "note": "плотный Inter, стиль финтеха и Apple",
+  "kk_alt": null
+ },
+ {
+  "name": "Onest",
+  "pkg": "@fontsource/onest",
+  "type": "sans",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "note": "дружелюбный геометрический",
+  "kk_alt": null
+ },
+ {
+  "name": "Golos Text",
+  "pkg": "@fontsource/golos-text",
+  "type": "sans",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "note": "чистый, деловой, строгий",
+  "kk_alt": null
+ },
+ {
+  "name": "Commissioner",
+  "pkg": "@fontsource/commissioner",
+  "type": "sans",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "note": "мягкий, тёплый (шрифт образца studio)",
+  "kk_alt": null
+ },
+ {
+  "name": "Nunito",
+  "pkg": "@fontsource/nunito",
+  "type": "sans",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   600,
+   700,
+   800,
+   900
+  ],
+  "note": "округлый, домашний",
+  "kk_alt": null
+ },
+ {
+  "name": "Nunito Sans",
+  "pkg": "@fontsource/nunito-sans",
+  "type": "sans",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   600,
+   700,
+   800
+  ],
+  "note": "спокойная версия Nunito без скруглений",
+  "kk_alt": null
+ },
+ {
+  "name": "Geologica",
+  "pkg": "@fontsource/geologica",
+  "type": "sans",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "note": "широкий, технологичный",
+  "kk_alt": null
+ },
+ {
+  "name": "Rubik",
+  "pkg": "@fontsource/rubik",
+  "type": "sans",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "note": "слегка скруглённый, дружелюбный",
+  "kk_alt": null
+ },
+ {
+  "name": "Roboto",
+  "pkg": "@fontsource/roboto",
+  "type": "sans",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   700,
+   900
+  ],
+  "note": "универсальный, привычный глазу",
+  "kk_alt": null
+ },
+ {
+  "name": "Open Sans",
+  "pkg": "@fontsource/open-sans",
+  "type": "sans",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800
+  ],
+  "note": "классика для длинных текстов",
+  "kk_alt": null
+ },
+ {
+  "name": "PT Sans",
+  "pkg": "@fontsource/pt-sans",
+  "type": "sans",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   700
+  ],
+  "note": "разработан для языков России и СНГ",
+  "kk_alt": null
+ },
+ {
+  "name": "Raleway",
+  "pkg": "@fontsource/raleway",
+  "type": "sans",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "note": "изящный, для заголовков",
+  "kk_alt": null
+ },
+ {
+  "name": "Fira Sans",
+  "pkg": "@fontsource/fira-sans",
+  "type": "sans",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "note": "читаемый, техничный",
+  "kk_alt": null
+ },
+ {
+  "name": "IBM Plex Sans",
+  "pkg": "@fontsource/ibm-plex-sans",
+  "type": "sans",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700
+  ],
+  "note": "строгий, корпоративный",
+  "kk_alt": null
+ },
+ {
+  "name": "Source Sans 3",
+  "pkg": "@fontsource/source-sans-3",
+  "type": "sans",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "note": "нейтральный для больших текстов",
+  "kk_alt": null
+ },
+ {
+  "name": "Noto Sans",
+  "pkg": "@fontsource/noto-sans",
+  "type": "sans",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "note": "самое полное покрытие языков",
+  "kk_alt": null
+ },
+ {
+  "name": "Oswald",
+  "pkg": "@fontsource/oswald",
+  "type": "display",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700
+  ],
+  "note": "узкий, плакатный, спортивный",
+  "kk_alt": null
+ },
+ {
+  "name": "Unbounded",
+  "pkg": "@fontsource/unbounded",
+  "type": "display",
+  "kk": false,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "note": "широкий, смелый, для крупных заголовков",
+  "kk_alt": "Geologica"
+ },
+ {
+  "name": "Tenor Sans",
+  "pkg": "@fontsource/tenor-sans",
+  "type": "sans",
+  "kk": false,
+  "cyr": true,
+  "weights": [
+   400
+  ],
+  "note": "тонкий, воздушный, глянцевый",
+  "kk_alt": "Golos Text"
+ },
+ {
+  "name": "Jost",
+  "pkg": "@fontsource/jost",
+  "type": "sans",
+  "kk": false,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "note": "геометрический (в стиле Futura); русские буквы есть, казахских нет",
+  "kk_alt": "Onest"
+ },
+ {
+  "name": "Cormorant Garamond",
+  "pkg": "@fontsource/cormorant-garamond",
+  "type": "serif",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700
+  ],
+  "note": "изысканная антиква, премиум",
+  "kk_alt": null
+ },
+ {
+  "name": "Cormorant",
+  "pkg": "@fontsource/cormorant",
+  "type": "serif",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700
+  ],
+  "note": "близкий родственник, чуть острее",
+  "kk_alt": null
+ },
+ {
+  "name": "Playfair Display",
+  "pkg": "@fontsource/playfair-display",
+  "type": "serif",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "note": "контрастная, журнальная",
+  "kk_alt": null
+ },
+ {
+  "name": "Lora",
+  "pkg": "@fontsource/lora",
+  "type": "serif",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700
+  ],
+  "note": "тёплая книжная антиква",
+  "kk_alt": null
+ },
+ {
+  "name": "Spectral",
+  "pkg": "@fontsource/spectral",
+  "type": "serif",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800
+  ],
+  "note": "сдержанная, редакционная",
+  "kk_alt": null
+ },
+ {
+  "name": "Prata",
+  "pkg": "@fontsource/prata",
+  "type": "serif",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400
+  ],
+  "note": "контрастная дисплейная антиква, один вес",
+  "kk_alt": null
+ },
+ {
+  "name": "PT Serif",
+  "pkg": "@fontsource/pt-serif",
+  "type": "serif",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   700
+  ],
+  "note": "читаемая антиква для длинных текстов",
+  "kk_alt": null
+ },
+ {
+  "name": "Merriweather",
+  "pkg": "@fontsource/merriweather",
+  "type": "serif",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   700,
+   900
+  ],
+  "note": "крепкая, для чтения с экрана",
+  "kk_alt": null
+ },
+ {
+  "name": "Noto Serif",
+  "pkg": "@fontsource/noto-serif",
+  "type": "serif",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "note": "антиква с полным покрытием языков",
+  "kk_alt": null
+ },
+ {
+  "name": "JetBrains Mono",
+  "pkg": "@fontsource/jetbrains-mono",
+  "type": "mono",
+  "kk": false,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800
+  ],
+  "note": "моно для тегов, цен, кода; казахских ә ғ қ ң ұ һ нет",
+  "kk_alt": "IBM Plex Mono"
+ },
+ {
+  "name": "IBM Plex Mono",
+  "pkg": "@fontsource/ibm-plex-mono",
+  "type": "mono",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700
+  ],
+  "note": "моно со всеми казахскими буквами",
+  "kk_alt": null
+ },
+ {
+  "name": "Roboto Mono",
+  "pkg": "@fontsource/roboto-mono",
+  "type": "mono",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700
+  ],
+  "note": "моно, нейтральный",
+  "kk_alt": null
+ },
+ {
+  "name": "Fira Mono",
+  "pkg": "@fontsource/fira-mono",
+  "type": "mono",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   700
+  ],
+  "note": "моно, техничный",
+  "kk_alt": null
+ },
+ {
+  "name": "PT Mono",
+  "pkg": "@fontsource/pt-mono",
+  "type": "mono",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400
+  ],
+  "note": "моно, один вес",
+  "kk_alt": null
+ },
+ {
+  "name": "Source Code Pro",
+  "pkg": "@fontsource/source-code-pro",
+  "type": "mono",
+  "kk": true,
+  "cyr": true,
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "note": "моно для кода",
+  "kk_alt": null
+ }
+]

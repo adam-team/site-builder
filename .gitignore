@@ -1,0 +1,14 @@
+node_modules/
+dist/
+!designs/external/**/dist/
+!designs/own/persona-app/dist/
+.DS_Store
+.vercel/
+.env
+.env.*
+!.env.example
+build/
+
+# Сайты учениц живут в их собственных репозиториях; здесь только образец _template
+projects/*
+!projects/_template/
