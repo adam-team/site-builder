@@ -122,6 +122,7 @@ document.getElementById("theme").onclick = function(){ var t = document.document
 var AVA = {own:"#ff3b45", platform:"#7c5cff", trend:"#ff8a00", github:"#2d7ff9"};
 function esc(s){ return String(s||"").replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]}) }
 function dur(s){ s=s||0; return Math.floor(s/60)+":"+String(s%60).padStart(2,"0") }
+function liveOk(d){ return d.live && (location.protocol==='file:' || d.live.indexOf('../')!==0) }
 function chan(d){ return d.group==="github" ? d.author+" · GitHub" : d.author==="Куралай" ? "Куралай · "+d.groupName : d.author }
 function sub(d){ return [d.niche, d.dark?"тёмный":"светлый"].filter(Boolean).join(" · ") }
 
@@ -182,8 +183,9 @@ function openWatch(n){
   var on = picks.indexOf(d.n)>=0;
   document.getElementById("acts").innerHTML =
     '<button class="act main'+(on?" done":"")+'" id="pickBtn">'+(on?"✓ Выбран":"Выбрать этот дизайн")+'</button>'+
-    (d.live?'<a class="act" href="'+esc(d.live)+'" target="_blank" rel="noopener">Открыть живой сайт ↗</a>':"")+
-    (d.repo?'<a class="act" href="'+esc(d.repo)+'" target="_blank" rel="noopener">Код на GitHub ↗</a>':"");
+    (liveOk(d)?'<a class="act" href="'+esc(d.live)+'" target="_blank" rel="noopener">Открыть живой сайт ↗</a>':"")+
+    (d.code?'<a class="act" href="'+esc(d.code)+'" target="_blank" rel="noopener">Код в site-builder ↗</a>':"")+
+    (d.repo?'<a class="act" href="'+esc(d.repo)+'" target="_blank" rel="noopener">Автор на GitHub ↗</a>':"");
   document.getElementById("pickBtn").onclick = function(){ togglePick(d.n); openWatch(d.n) };
   var kind = {tokens:"Палитра для шаблона сайта: агент соберёт сайт со своими цветами, шрифтами и анимациями", own:"Готовый дизайн Куралай: агент возьмёт его за основу и поменяет под вас", external:"Готовый шаблон с GitHub: агент скопирует код и поменяет под вас", fetch:"Шаблон с GitHub: агент скачает его по команде, код в репозитории не хранится"}[d.kind];
   document.getElementById("desc").innerHTML = '<b>'+esc(d.mood||d.name)+'</b><br>'+esc(kind)+

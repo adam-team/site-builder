@@ -42,6 +42,7 @@ for d in designs:
         "author": d.get("author", ""), "repo": d.get("repo", ""), "license": d.get("license", ""),
         "video": f"media/{n}.mp4" if has else None, "thumb": f"media/{n}.jpg" if has else None,
         "dur": seconds(os.path.join(media, f"{n}.mp4")) if has else 0, "live": live,
+        "code": ("https://github.com/adam-team/site-builder/tree/main/" + os.path.dirname(d["path"])) if d.get("path") else "",
         "colors": [d["tokens"][k] for k in ("brand", "accent", "bg", "text")] if "tokens" in d else [],
         "fonts": [d["tokens"]["fh"], d["tokens"]["fb"]] if "tokens" in d else [],
     })

@@ -1,0 +1,184 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><title>Дизайн сайта</title><style>@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&family=Geologica:wght@600;700&family=Manrope:wght@500;700;800&family=Onest:wght@500;700;800&family=JetBrains+Mono:wght@500;700&family=IBM+Plex+Mono:wght@500;700&display=swap');
+@page { size: 1080px 1080px; margin: 0; }
+:root { --red:#C8102E; --hi:#FF4D63; --black:#0E0D0D; --graph:#1F1C1B; --cream:#F3EDE4; --paper:#F4F2EF; --muted:#A69D92;
+  --d:'Unbounded','Geologica',sans-serif; --b:'Manrope','Onest',sans-serif; --m:'JetBrains Mono','IBM Plex Mono',monospace; }
+* { box-sizing:border-box; margin:0; padding:0; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+body { font-family:var(--b); }
+.s { width:1080px; height:1080px; position:relative; overflow:hidden; page-break-after:always; background:var(--paper); color:var(--black);
+  background-image:radial-gradient(rgba(14,13,13,.12) 1.6px, transparent 1.8px); background-size:36px 36px; }
+.s.cr { background-color:var(--cream); } .s.dk { background-color:var(--black); color:var(--cream); background-image:radial-gradient(rgba(243,237,228,.08) 1.6px, transparent 1.8px); }
+.s.rd { background-color:var(--red); color:#fff; background-image:radial-gradient(rgba(255,255,255,.16) 1.6px, transparent 1.8px); }
+.top { position:absolute; top:52px; left:64px; right:64px; display:flex; justify-content:space-between; font:500 21px var(--m); opacity:.85; }
+.top b::before { content:'● '; color:var(--red); } .rd .top b::before { color:#fff; }
+.bot { position:absolute; bottom:46px; left:64px; right:64px; display:flex; justify-content:space-between; font:500 19px var(--m); opacity:.6; }
+.in { position:absolute; left:64px; right:64px; top:118px; bottom:110px; display:flex; flex-direction:column; gap:26px; }
+.in.c { justify-content:center; }
+h1 { font:700 76px/1.04 var(--d); letter-spacing:-2.5px; } h2 { font:700 54px/1.08 var(--d); letter-spacing:-1.8px; }
+h3 { font:600 28px/1.2 var(--d); letter-spacing:-.6px; }
+.hl { background:var(--red); color:#fff; padding:0 12px; border-radius:10px; box-decoration-break:clone; -webkit-box-decoration-break:clone; }
+.rd .hl { background:#fff; color:var(--red); } .ac { color:var(--red); } .dk .ac { color:var(--hi); }
+p, li { font:500 27px/1.42 var(--b); } .sm { font-size:22px; } .mono { font-family:var(--m); } .mut { opacity:.7; }
+.sub { font:500 25px var(--m); opacity:.85; } .sub::before { content:'// '; color:var(--hi); }
+.grid { display:grid; gap:18px; } .g2 { grid-template-columns:1fr 1fr; } .g3 { grid-template-columns:repeat(3,1fr); } .g4 { grid-template-columns:repeat(4,1fr); }
+.card { background:#fff; border-radius:24px; padding:24px 26px; display:flex; flex-direction:column; gap:8px; box-shadow:0 20px 40px -32px rgba(0,0,0,.5); }
+.dk .card { background:var(--graph); color:var(--cream); box-shadow:none; }
+.card .k { font:700 18px var(--m); color:var(--red); text-transform:uppercase; } .dk .card .k { color:var(--hi); }
+.card b { font:700 26px/1.2 var(--d); letter-spacing:-.4px; } .card span { font:500 21px/1.4 var(--b); opacity:.8; }
+.big { font:700 150px/0.95 var(--d); letter-spacing:-6px; color:var(--red); } .dk .big { color:var(--hi); }
+.steps { list-style:none; display:flex; flex-direction:column; gap:18px; }
+.steps li { display:grid; grid-template-columns:62px 1fr; gap:22px; align-items:start; }
+.steps i { width:62px; height:62px; border-radius:18px; background:var(--red); color:#fff; display:grid; place-items:center; font:700 24px var(--m); font-style:normal; }
+.steps li:nth-child(even) i { background:transparent; color:var(--red); border:3px solid var(--red); }
+.steps b { display:block; font:700 27px/1.2 var(--d); letter-spacing:-.4px; } .steps p { font-size:22px; opacity:.8; }
+.win { background:#fff; border-radius:24px; overflow:hidden; box-shadow:0 26px 50px -34px rgba(0,0,0,.55); }
+.dk .win { background:var(--graph); color:var(--cream); }
+.win .bar { display:flex; align-items:center; gap:10px; padding:14px 20px; border-bottom:1.5px solid rgba(0,0,0,.07); font:500 18px var(--m); color:var(--muted); }
+.win .bar i { width:12px; height:12px; border-radius:50%; background:#d8d2ca; } .win .bar i:first-child { background:var(--red); }
+.win .bar span { margin-left:8px; }
+.term { background:var(--black); color:var(--cream); border-radius:24px; overflow:hidden; }
+.term .bar { border-color:rgba(255,255,255,.1); } .term pre { padding:22px 26px 26px; font:500 21px/1.55 var(--m); white-space:pre-wrap; }
+.term u { text-decoration:none; color:var(--hi); }
+table { width:100%; border-collapse:collapse; font:500 21px/1.35 var(--b); background:#fff; border-radius:20px; overflow:hidden; }
+th { text-align:left; font:700 16px var(--m); text-transform:uppercase; color:var(--muted); padding:14px 18px; border-bottom:1.5px solid #eee; }
+td { padding:12px 18px; border-bottom:1px solid #f0ece6; vertical-align:top; } td:first-child { font:700 20px var(--m); color:var(--red); white-space:nowrap; }
+.img { border-radius:20px; overflow:hidden; box-shadow:0 26px 50px -34px rgba(0,0,0,.55); background:#fff; }
+.img img { display:block; width:100%; }
+.row { display:flex; gap:16px; align-items:flex-start; } .row > * { flex:1; min-width:0; }
+.chips { display:flex; flex-wrap:wrap; gap:12px; } .chips span { font:700 21px var(--b); padding:10px 20px; border-radius:30px; border:2px solid currentColor; }
+.chips span.f { background:var(--red); border-color:var(--red); color:#fff; }
+.num { font:700 140px/1 var(--d); letter-spacing:-6px; }
+.word { display:inline-block; background:#fff; color:var(--red); font:700 70px var(--m); padding:4px 28px; border-radius:22px; }
+</style></head><body><section class="s dk"><div class="top"><b>урок 6.4 · дизайн сайта</b><span>01 / 24</span></div><div class="in c">
+      <div class="sub">модуль 6 · сайты и лендинги</div>
+      <h1>Дизайн сайта: <span class="hl">89 дизайнов</span> в видео и сайт вместе с агентом</h1>
+      <p class="mut">Тема → структура → дизайн из видео-галереи → тексты → готовый сайт в интернете. Без программиста и без дизайнера.</p>
+      <p class="mono" style="font-size:24px"><span class="ac">></span> github.com/adam-team/site-builder</p></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s "><div class="top"><b>урок 6.4 · дизайн сайта</b><span>02 / 24</span></div><div class="in ">
+      <h2>Что получите <span class="hl">за урок</span></h2>
+      <ul class="steps">
+        <li><i>01</i><div><b>Структуру сайта</b><p>свою или собранную вместе в конструкторе: какие блоки и в каком порядке</p></div></li>
+        <li><i>02</i><div><b>Дизайн из 89 вариантов</b><p>смотрите видео как на YouTube и выбираете номер</p></div></li>
+        <li><i>03</i><div><b>Тексты по блокам</b><p>агент спрашивает, вы отвечаете, цены и отзывы только ваши</p></div></li>
+        <li><i>04</i><div><b>Готовый сайт по ссылке</b><p>с анимациями, на телефоне и компьютере, на Vercel</p></div></li>
+      </ul></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s cr"><div class="top"><b>урок 6.4 · дизайн сайта</b><span>03 / 24</span></div><div class="in ">
+      <h2>Что внутри <span class="hl">кода на GitHub</span></h2>
+      <div class="grid g3">
+        <div class="card"><div class="big" style="font-size:110px">89</div><b>дизайнов</b><span>у каждого видео-превью и живой сайт</span></div>
+        <div class="card"><div class="big" style="font-size:110px">10</div><b>тем сайтов</b><span>эксперт, школа, услуги, кафе, IT…</span></div>
+        <div class="card"><div class="big" style="font-size:110px">15</div><b>блоков</b><span>от первого экрана до контактов</span></div>
+        <div class="card"><div class="big" style="font-size:110px">38</div><b>шрифтов</b><span>с проверкой казахских букв</span></div>
+        <div class="card"><div class="big" style="font-size:110px">6</div><b>видов карточек</b><span>стекло, глина, брутализм, контур…</span></div>
+        <div class="card"><div class="big" style="font-size:110px">4</div><b>анимации</b><span>подъём, проявление, приближение, 3D</span></div>
+      </div></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s dk"><div class="top"><b>урок 6.4 · дизайн сайта</b><span>04 / 24</span></div><div class="in ">
+      <h2>7 этапов <span class="hl">с агентом</span></h2>
+      <table style="background:var(--graph);color:var(--cream)"><tr><th>этап</th><th>что происходит</th></tr>
+      <tr><td>1 тема</td><td>чем занимаетесь, кто посетитель, одно главное действие</td></tr>
+      <tr><td>2 структура</td><td>есть своя — раскладываем по блокам, нет — собираем в конструкторе</td></tr>
+      <tr><td>3 дизайн</td><td>Дизайн-тека: 89 видео, выбираете до трёх номеров</td></tr>
+      <tr><td>4 тексты</td><td>по блокам сверху вниз, черновики агента только с вашим «да»</td></tr>
+      <tr><td>5 сборка</td><td>агент собирает сайт по трём файлам: структура, дизайн, тексты</td></tr>
+      <tr><td>6 проверка</td><td>скриншоты компьютера и телефона, поиск заглушек</td></tr>
+      <tr><td>7 запуск</td><td>Vercel, GitHub Pages или архив</td></tr></table>
+      <p class="sm mut">На каждом этапе агент задаёт один вопрос с вариантами и ждёт ответа.</p></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s rd"><div class="top"><b>урок 6.4 · дизайн сайта</b><span>05 / 24</span></div><div class="in c"><div class="num">01</div><h1>Структура</h1><p>сначала каркас, потом красота</p></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s "><div class="top"><b>урок 6.4 · дизайн сайта</b><span>06 / 24</span></div><div class="in ">
+      <h2>Первый вопрос: <span class="hl">есть структура?</span></h2>
+      <div class="grid g2">
+        <div class="card"><div class="k">да, есть план</div><b>Присылаете текст, файл или ссылку</b>
+          <span>Агент раскладывает его по 15 блокам, показывает список «Так?» и записывает STRUCTURE.md.</span></div>
+        <div class="card"><div class="k">нет плана</div><b>Собираем вместе в конструкторе</b>
+          <span>Выбираете тему, размер и блоки галочками. Справа сразу видно сайт на телефоне.</span></div>
+      </div>
+      <div class="win"><div class="bar"><i></i><i></i><i></i><span>чат с агентом</span></div>
+        <p style="padding:22px 26px" class="sm">«У тебя уже есть структура сайта: план блоков, документ или пример? 1) да, пришлю 2) нет, соберём в конструкторе 3) предложи сама»</p></div></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s cr"><div class="top"><b>урок 6.4 · дизайн сайта</b><span>07 / 24</span></div><div class="in ">
+      <h2>Конструктор <span class="hl">структуры</span></h2>
+      <div class="img" style="height:600px;"><img src="file:///Users/kuralay/Projects/site-builder/docs/presentation/img/structure.jpg" style="width:100%;object-fit:cover;object-position:top"></div>
+      <p class="sm mut">structure/index.html · 10 тем, 3 размера (мини, полный, визитка), стрелки меняют порядок, кнопка «Скопировать для агента».</p></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s "><div class="top"><b>урок 6.4 · дизайн сайта</b><span>08 / 24</span></div><div class="in ">
+      <h2>Порядок <span class="hl">продающей</span> страницы</h2>
+      <ul class="steps">
+        <li><i>01</i><div><b>Внимание</b><p>первый экран: что это, для кого, какая кнопка — за 3 секунды</p></div></li>
+        <li><i>02</i><div><b>Доверие</b><p>обо мне, логотипы, цифры</p></div></li>
+        <li><i>03</i><div><b>Ценность</b><p>услуги, программа, преимущества</p></div></li>
+        <li><i>04</i><div><b>Доказательства → решение</b><p>отзывы перед ценами, вопросы после цен</p></div></li>
+        <li><i>05</i><div><b>Действие</b><p>призыв и контакты, одна кнопка во всей странице</p></div></li>
+      </ul></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s rd"><div class="top"><b>урок 6.4 · дизайн сайта</b><span>09 / 24</span></div><div class="in c"><div class="num">02</div><h1>Дизайн-тека</h1><p>89 дизайнов в видео, как на YouTube</p></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s dk"><div class="top"><b>урок 6.4 · дизайн сайта</b><span>10 / 24</span></div><div class="in ">
+      <h2>Выбор <span class="hl">глазами</span>, а не по описанию</h2>
+      <div class="img" style="height:590px;"><img src="file:///Users/kuralay/Projects/site-builder/docs/presentation/img/gallery.jpg" style="width:100%;object-fit:cover;object-position:top"></div>
+      <p class="sm mut">Наведите на обложку — играет превью. Вкладки: Мои дизайны · Платформы · Тренды 2026 · GitHub · Тёмные · Светлые.</p></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s "><div class="top"><b>урок 6.4 · дизайн сайта</b><span>11 / 24</span></div><div class="in ">
+      <h2>Видео, живой сайт и <span class="hl">«Выбрать»</span></h2>
+      <div class="img" style="height:590px;"><img src="file:///Users/kuralay/Projects/site-builder/docs/presentation/img/watch.jpg" style="width:100%;object-fit:cover;object-position:top"></div>
+      <p class="sm mut">До трёх номеров → «Скопировать для агента» → вставить в чат. Агент соберёт образцы на вашей структуре.</p></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s cr"><div class="top"><b>урок 6.4 · дизайн сайта</b><span>12 / 24</span></div><div class="in ">
+      <h2>4 группы <span class="hl">дизайнов</span></h2>
+      <div class="grid g2">
+        <div class="card"><div class="img" style=""><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/1.jpg" style="width:100%;object-fit:cover;object-position:top"></div><div class="k">1–8 · мои дизайны</div><span>BOSS VISION, PERSONA, лендинг интенсива, тест телесного терапевта</span></div>
+        <div class="card"><div class="img" style=""><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/20.jpg" style="width:100%;object-fit:cover;object-position:top"></div><div class="k">9–40 · дизайны платформ</div><span>32 палитры: финансы, брендбук Куралай, подбор персонала</span></div>
+        <div class="card"><div class="img" style=""><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/42.jpg" style="width:100%;object-fit:cover;object-position:top"></div><div class="k">41–50 · тренды 2026</div><span>Bento, Liquid Glass, брутализм, люкс, нуар, степь</span></div>
+        <div class="card"><div class="img" style=""><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/60.jpg" style="width:100%;object-fit:cover;object-position:top"></div><div class="k">51–89 · GitHub</div><span>39 готовых шаблонов с открытой лицензией</span></div>
+      </div></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s dk"><div class="top"><b>урок 6.4 · дизайн сайта</b><span>13 / 24</span></div><div class="in ">
+      <h2>1–8 · <span class="hl">мои дизайны</span></h2>
+      <div class="grid" style="grid-template-columns:repeat(4,1fr);gap:14px"><div><div class="img"><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/1.jpg"></div><p class="mono sm" style="margin-top:6px">№1</p></div><div><div class="img"><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/2.jpg"></div><p class="mono sm" style="margin-top:6px">№2</p></div><div><div class="img"><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/3.jpg"></div><p class="mono sm" style="margin-top:6px">№3</p></div><div><div class="img"><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/4.jpg"></div><p class="mono sm" style="margin-top:6px">№4</p></div><div><div class="img"><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/5.jpg"></div><p class="mono sm" style="margin-top:6px">№5</p></div><div><div class="img"><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/6.jpg"></div><p class="mono sm" style="margin-top:6px">№6</p></div><div><div class="img"><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/7.jpg"></div><p class="mono sm" style="margin-top:6px">№7</p></div><div><div class="img"><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/8.jpg"></div><p class="mono sm" style="margin-top:6px">№8</p></div></div>
+      <p class="sm mut">Готовый код лежит в designs/own/: агент копирует его и меняет тексты, цвета и блоки под вас.</p></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s "><div class="top"><b>урок 6.4 · дизайн сайта</b><span>14 / 24</span></div><div class="in ">
+      <h2>41–50 · <span class="hl">тренды 2026</span></h2>
+      <div class="grid" style="grid-template-columns:repeat(5,1fr);gap:14px"><div><div class="img"><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/41.jpg"></div><p class="mono sm" style="margin-top:6px">№41</p></div><div><div class="img"><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/42.jpg"></div><p class="mono sm" style="margin-top:6px">№42</p></div><div><div class="img"><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/43.jpg"></div><p class="mono sm" style="margin-top:6px">№43</p></div><div><div class="img"><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/44.jpg"></div><p class="mono sm" style="margin-top:6px">№44</p></div><div><div class="img"><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/45.jpg"></div><p class="mono sm" style="margin-top:6px">№45</p></div><div><div class="img"><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/46.jpg"></div><p class="mono sm" style="margin-top:6px">№46</p></div><div><div class="img"><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/47.jpg"></div><p class="mono sm" style="margin-top:6px">№47</p></div><div><div class="img"><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/48.jpg"></div><p class="mono sm" style="margin-top:6px">№48</p></div><div><div class="img"><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/49.jpg"></div><p class="mono sm" style="margin-top:6px">№49</p></div><div><div class="img"><img src="file:///Users/kuralay/Projects/site-builder/gallery/media/50.jpg"></div><p class="mono sm" style="margin-top:6px">№50</p></div></div>
+      <p class="sm mut">Bento · Liquid Glass · Необрутализм · Люкс · Аврора · Швейцарский · Глина · Нуар · Степь · Мята</p></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s cr"><div class="top"><b>урок 6.4 · дизайн сайта</b><span>15 / 24</span></div><div class="in ">
+      <h2>51–89 · <span class="hl">шаблоны с GitHub</span></h2>
+      <div class="img" style=""><img src="file:///Users/kuralay/Projects/site-builder/docs/presentation/img/github.jpg" style="width:100%;object-fit:cover;object-position:top"></div>
+      <p>21 лендинг awesome-landing-pages, Start Bootstrap, Creative Tim, Landwind, shadcn, Next SaaS, Tailblocks, Cruip.</p>
+      <p class="sm mut">Код лежит внутри репозитория вместе с лицензиями MIT. Cruip скачивается отдельной командой: его лицензия запрещает хранить копии.</p></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s dk"><div class="top"><b>урок 6.4 · дизайн сайта</b><span>16 / 24</span></div><div class="in ">
+      <h2>Что смотреть <span class="hl">под нишу</span></h2>
+      <table style="background:var(--graph);color:var(--cream)"><tr><th>ваша ниша</th><th>номера</th></tr>
+      <tr><td>психолог, коуч</td><td>45 Аврора · 37 Мягкий коралл · 39 Спокойная природа</td></tr>
+      <tr><td>онлайн-школа</td><td>43 Необрутализм · 47 Глина · 6 Лендинг интенсива</td></tr>
+      <tr><td>IT, ИИ-сервис</td><td>41 Bento · 42 Liquid Glass · 38 Тёмный техно</td></tr>
+      <tr><td>премиум, недвижимость</td><td>44 Люкс · 20 Obsidian Gold · 19 Ivory &amp; Bronze</td></tr>
+      <tr><td>клиника, здоровье</td><td>50 Чистая мята · 36 Деловой синий</td></tr>
+      <tr><td>кафе, казахский бренд</td><td>49 Степь-орнамент · 24 Dala / Steppe</td></tr>
+      <tr><td>мероприятие, фото</td><td>48 Кино-нуар · 46 Швейцарский журнал</td></tr></table>
+      <p class="sm mut">Или скажите агенту настроение: «тёмный», «нежный», «как у Apple» — он предложит 3 номера.</p></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s "><div class="top"><b>урок 6.4 · дизайн сайта</b><span>17 / 24</span></div><div class="in ">
+      <h2>Палитра или <span class="hl">готовый шаблон</span></h2>
+      <div class="grid g2">
+        <div class="card"><div class="k">9–50 · палитра</div><b>Сайт по вашей структуре</b>
+          <span>Агент берёт цвета, шрифты и анимации дизайна и собирает сайт одной командой. Быстрее всего, блоки любые.</span></div>
+        <div class="card"><div class="k">1–8, 51–89 · шаблон</div><b>Готовый сайт целиком</b>
+          <span>Агент копирует код и переделывает под вас. Хорошо, когда структура шаблона почти совпадает с вашей.</span></div>
+      </div>
+      <div class="chips"><span class="f">первый экран: 4 вида</span><span>карточки: 6 видов</span><span>анимации: 4</span><span>шрифты: любые из 38</span></div>
+      <p class="sm mut">Можно смешать: «цвета от 45, первый экран от 41».</p></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s cr"><div class="top"><b>урок 6.4 · дизайн сайта</b><span>18 / 24</span></div><div class="in ">
+      <h2>Одна структура — <span class="hl">разный</span> дизайн</h2>
+      <div class="row"><div class="img" style="height:640px;"><img src="file:///Users/kuralay/Projects/site-builder/docs/presentation/img/demo41.jpg" style="width:100%;object-fit:cover;object-position:top"></div><div class="img" style="height:640px;"><img src="file:///Users/kuralay/Projects/site-builder/docs/presentation/img/demo43.jpg" style="width:100%;object-fit:cover;object-position:top"></div></div>
+      <p class="sm mut">№41 Bento-сетка и №43 Необрутализм: тот же шаблон, другие цвета, шрифты, карточки и анимации.</p></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s rd"><div class="top"><b>урок 6.4 · дизайн сайта</b><span>19 / 24</span></div><div class="in c"><div class="num">03</div><h1>Тексты и запуск</h1><p>от слов к ссылке на сайт</p></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s "><div class="top"><b>урок 6.4 · дизайн сайта</b><span>20 / 24</span></div><div class="in ">
+      <h2>Тексты, которые <span class="hl">продают</span></h2>
+      <ul class="steps">
+        <li><i>01</i><div><b>Заголовок = результат клиента</b><p>«Вернёте спокойствие без долгих лет терапии», а не «Консультации психолога»</p></div></li>
+        <li><i>02</i><div><b>Кнопка называет действие</b><p>«Записаться на консультацию», а не «Отправить»</p></div></li>
+        <li><i>03</i><div><b>Цифры и отзывы только настоящие</b><p>агент их не выдумывает и ставит пометку ЗАПОЛНИТЬ</p></div></li>
+        <li><i>04</i><div><b>Вопросы из переписки</b><p>что клиенты спрашивают перед покупкой</p></div></li>
+      </ul></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s dk"><div class="top"><b>урок 6.4 · дизайн сайта</b><span>21 / 24</span></div><div class="in ">
+      <h2>Установка <span class="hl">одним сообщением</span></h2>
+      <div class="win term" style="background:var(--black);color:var(--cream)"><div class="bar"><i></i><i></i><i></i><span>Claude Code · пустая папка</span></div>
+      <pre>Склонируй репозиторий <u>https://github.com/adam-team/site-builder</u>
+в папку site-builder, подготовь окружение по SETUP.md
+и сразу начни опрос по docs/agent-contract/WORKFLOW.md.
+Я хочу сайт с красивым дизайном. Спрашивай по одному
+вопросу, с вариантами ответа.</pre></div>
+      <p class="sm mut">Репозиторий приватный: сначала получите доступ у Куралай. Python, Node и Chrome агент проверит и поставит сам.</p></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s cr"><div class="top"><b>урок 6.4 · дизайн сайта</b><span>22 / 24</span></div><div class="in ">
+      <h2>Команды, если <span class="hl">агент сбился</span></h2>
+      <div class="win term" style="background:var(--black);color:var(--cream)"><div class="bar"><i></i><i></i><i></i><span>шпаргалка</span></div>
+      <pre><u>/site</u>                                  начать или продолжить
+open structure/index.html              конструктор структуры
+open gallery/index.html                Дизайн-тека
+python3 scripts/catalog.py find тёмный  подобрать номера
+python3 scripts/build_site.py projects/имя   собрать сайт
+bash scripts/check-site.sh projects/имя/site проверить</pre></div>
+      <p class="sm mut">Или просто: «Остановись. Прочитай CLAUDE.md и WORKFLOW.md, скажи, на каком мы этапе, и продолжай по одному вопросу».</p></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s "><div class="top"><b>урок 6.4 · дизайн сайта</b><span>23 / 24</span></div><div class="in ">
+      <h2>Задание <span class="hl">урока</span></h2>
+      <ul class="steps">
+        <li><i>01</i><div><b>Установить site-builder</b><p>сообщением со слайда 21</p></div></li>
+        <li><i>02</i><div><b>Пройти этапы 1–2</b><p>BRIEF.md и STRUCTURE.md готовы</p></div></li>
+        <li><i>03</i><div><b>Выбрать 3 дизайна в Дизайн-теке</b><p>и сравнить образцы на своей структуре</p></div></li>
+        <li><i>04</i><div><b>Собрать и опубликовать</b><p>прислать ссылку на сайт в чат курса</p></div></li>
+      </ul></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section><section class="s rd"><div class="top"><b>урок 6.4 · дизайн сайта</b><span>24 / 24</span></div><div class="in c">
+      <h2>Всё для урока — <span class="hl">в материалах</span></h2>
+      <div class="grid g3">
+        <div class="card" style="color:var(--black)"><div class="k">pdf</div><b>Эта презентация</b><span>кнопка «Презентация» вверху урока</span></div>
+        <div class="card" style="color:var(--black)"><div class="k">github</div><b>Код site-builder</b><span>github.com/adam-team/site-builder</span></div>
+        <div class="card" style="color:var(--black)"><div class="k">видео</div><b>Дизайн-тека онлайн</b><span>89 дизайнов сайтов в видео</span></div>
+      </div>
+      <p>Следующий урок модуля: такая же обучалка для <b>презентаций</b> с 3D-переходами.</p></div><div class="bot"><span>@kuraylife</span><span>github.com/adam-team/site-builder</span></div></section></body></html>

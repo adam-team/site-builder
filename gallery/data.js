@@ -16,6 +16,7 @@ window.DESIGNS = [
 "thumb": "media/1.jpg",
 "dur": 13,
 "live": "../designs/own/boss-vision-variants/10-variants.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/own/boss-vision-variants",
 "colors": [],
 "fonts": []
 },
@@ -35,6 +36,7 @@ window.DESIGNS = [
 "thumb": "media/2.jpg",
 "dur": 13,
 "live": "../designs/own/boss-vision-variants/v2-variants.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/own/boss-vision-variants",
 "colors": [],
 "fonts": []
 },
@@ -54,6 +56,7 @@ window.DESIGNS = [
 "thumb": "media/3.jpg",
 "dur": 7,
 "live": "../designs/own/boss-vision-variants/variants.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/own/boss-vision-variants",
 "colors": [],
 "fonts": []
 },
@@ -73,6 +76,7 @@ window.DESIGNS = [
 "thumb": "media/4.jpg",
 "dur": 7,
 "live": "../designs/own/boss-vision-app/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/own/boss-vision-app",
 "colors": [],
 "fonts": []
 },
@@ -92,6 +96,7 @@ window.DESIGNS = [
 "thumb": "media/5.jpg",
 "dur": 13,
 "live": "../designs/own/glavnaya-site/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/own/glavnaya-site",
 "colors": [],
 "fonts": []
 },
@@ -111,6 +116,7 @@ window.DESIGNS = [
 "thumb": "media/6.jpg",
 "dur": 13,
 "live": "../designs/own/intensiv-landing/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/own/intensiv-landing",
 "colors": [],
 "fonts": []
 },
@@ -130,6 +136,7 @@ window.DESIGNS = [
 "thumb": "media/7.jpg",
 "dur": 8,
 "live": "../designs/own/telesny-variants/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/own/telesny-variants",
 "colors": [],
 "fonts": []
 },
@@ -149,6 +156,7 @@ window.DESIGNS = [
 "thumb": "media/8.jpg",
 "dur": 7,
 "live": "../designs/own/persona-app/dist/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/own/persona-app/dist",
 "colors": [],
 "fonts": []
 },
@@ -168,6 +176,7 @@ window.DESIGNS = [
 "thumb": "media/9.jpg",
 "dur": 10,
 "live": "live/9/index.html",
+"code": "",
 "colors": [
 "#1E7A4C",
 "#E8B64C",
@@ -195,6 +204,7 @@ window.DESIGNS = [
 "thumb": "media/10.jpg",
 "dur": 13,
 "live": "live/10/index.html",
+"code": "",
 "colors": [
 "#1E7A4C",
 "#F2B705",
@@ -222,6 +232,7 @@ window.DESIGNS = [
 "thumb": "media/11.jpg",
 "dur": 13,
 "live": "live/11/index.html",
+"code": "",
 "colors": [
 "#C9A86A",
 "#C9A86A",
@@ -249,6 +260,7 @@ window.DESIGNS = [
 "thumb": "media/12.jpg",
 "dur": 13,
 "live": "live/12/index.html",
+"code": "",
 "colors": [
 "#2B45FF",
 "#FFD43B",
@@ -276,6 +288,7 @@ window.DESIGNS = [
 "thumb": "media/13.jpg",
 "dur": 13,
 "live": "live/13/index.html",
+"code": "",
 "colors": [
 "#FF5B2E",
 "#0E0E0E",
@@ -303,6 +316,7 @@ window.DESIGNS = [
 "thumb": "media/14.jpg",
 "dur": 10,
 "live": "live/14/index.html",
+"code": "",
 "colors": [
 "#C4613A",
 "#7F9C83",
@@ -330,6 +344,7 @@ window.DESIGNS = [
 "thumb": "media/15.jpg",
 "dur": 13,
 "live": "live/15/index.html",
+"code": "",
 "colors": [
 "#0B1E36",
 "#C5A059",
@@ -357,6 +372,7 @@ window.DESIGNS = [
 "thumb": "media/16.jpg",
 "dur": 11,
 "live": "live/16/index.html",
+"code": "",
 "colors": [
 "#C8102E",
 "#0E0D0D",
@@ -384,6 +400,7 @@ window.DESIGNS = [
 "thumb": "media/17.jpg",
 "dur": 10,
 "live": "live/17/index.html",
+"code": "",
 "colors": [
 "#C8102E",
 "#FF4D63",
@@ -411,6 +428,7 @@ window.DESIGNS = [
 "thumb": "media/18.jpg",
 "dur": 13,
 "live": "live/18/index.html",
+"code": "",
 "colors": [
 "#16A34A",
 "#0F6D33",
@@ -438,6 +456,7 @@ window.DESIGNS = [
 "thumb": "media/19.jpg",
 "dur": 13,
 "live": "live/19/index.html",
+"code": "",
 "colors": [
 "#2A241F",
 "#B08D57",
@@ -465,6 +484,7 @@ window.DESIGNS = [
 "thumb": "media/20.jpg",
 "dur": 13,
 "live": "live/20/index.html",
+"code": "",
 "colors": [
 "#D4AD5A",
 "#E1BD6C",
@@ -492,6 +512,7 @@ window.DESIGNS = [
 "thumb": "media/21.jpg",
 "dur": 10,
 "live": "live/21/index.html",
+"code": "",
 "colors": [
 "#0071E3",
 "#1D1D1F",
@@ -519,6 +540,7 @@ window.DESIGNS = [
 "thumb": "media/22.jpg",
 "dur": 13,
 "live": "live/22/index.html",
+"code": "",
 "colors": [
 "#0D2150",
 "#C2A063",
@@ -546,6 +568,7 @@ window.DESIGNS = [
 "thumb": "media/23.jpg",
 "dur": 11,
 "live": "live/23/index.html",
+"code": "",
 "colors": [
 "#0F3B2E",
 "#B8975A",
@@ -573,6 +596,7 @@ window.DESIGNS = [
 "thumb": "media/24.jpg",
 "dur": 13,
 "live": "live/24/index.html",
+"code": "",
 "colors": [
 "#C1502E",
 "#2B1E1A",
@@ -600,6 +624,7 @@ window.DESIGNS = [
 "thumb": "media/25.jpg",
 "dur": 10,
 "live": "live/25/index.html",
+"code": "",
 "colors": [
 "#8B7CFF",
 "#38E1C6",
@@ -627,6 +652,7 @@ window.DESIGNS = [
 "thumb": "media/26.jpg",
 "dur": 13,
 "live": "live/26/index.html",
+"code": "",
 "colors": [
 "#4A2337",
 "#B98A6E",
@@ -654,6 +680,7 @@ window.DESIGNS = [
 "thumb": "media/27.jpg",
 "dur": 13,
 "live": "live/27/index.html",
+"code": "",
 "colors": [
 "#D7F25C",
 "#F2F3F0",
@@ -681,6 +708,7 @@ window.DESIGNS = [
 "thumb": "media/28.jpg",
 "dur": 10,
 "live": "live/28/index.html",
+"code": "",
 "colors": [
 "#1B2A4A",
 "#5B7CFA",
@@ -708,6 +736,7 @@ window.DESIGNS = [
 "thumb": "media/29.jpg",
 "dur": 13,
 "live": "live/29/index.html",
+"code": "",
 "colors": [
 "#0B1B3F",
 "#D4A84F",
@@ -735,6 +764,7 @@ window.DESIGNS = [
 "thumb": "media/30.jpg",
 "dur": 13,
 "live": "live/30/index.html",
+"code": "",
 "colors": [
 "#064E3B",
 "#C8F169",
@@ -762,6 +792,7 @@ window.DESIGNS = [
 "thumb": "media/31.jpg",
 "dur": 13,
 "live": "live/31/index.html",
+"code": "",
 "colors": [
 "#D9F84A",
 "#D9F84A",
@@ -789,6 +820,7 @@ window.DESIGNS = [
 "thumb": "media/32.jpg",
 "dur": 10,
 "live": "live/32/index.html",
+"code": "",
 "colors": [
 "#4F46E5",
 "#14B8A6",
@@ -816,6 +848,7 @@ window.DESIGNS = [
 "thumb": "media/33.jpg",
 "dur": 13,
 "live": "live/33/index.html",
+"code": "",
 "colors": [
 "#1A56FF",
 "#1A56FF",
@@ -843,6 +876,7 @@ window.DESIGNS = [
 "thumb": "media/34.jpg",
 "dur": 13,
 "live": "live/34/index.html",
+"code": "",
 "colors": [
 "#0E4D64",
 "#F5A524",
@@ -870,6 +904,7 @@ window.DESIGNS = [
 "thumb": "media/35.jpg",
 "dur": 13,
 "live": "live/35/index.html",
+"code": "",
 "colors": [
 "#1E7A4C",
 "#B6862C",
@@ -897,6 +932,7 @@ window.DESIGNS = [
 "thumb": "media/36.jpg",
 "dur": 13,
 "live": "live/36/index.html",
+"code": "",
 "colors": [
 "#2F5BD8",
 "#18A999",
@@ -924,6 +960,7 @@ window.DESIGNS = [
 "thumb": "media/37.jpg",
 "dur": 13,
 "live": "live/37/index.html",
+"code": "",
 "colors": [
 "#E4572E",
 "#F2A65A",
@@ -951,6 +988,7 @@ window.DESIGNS = [
 "thumb": "media/38.jpg",
 "dur": 10,
 "live": "live/38/index.html",
+"code": "",
 "colors": [
 "#7C5CFF",
 "#2EE6C5",
@@ -978,6 +1016,7 @@ window.DESIGNS = [
 "thumb": "media/39.jpg",
 "dur": 13,
 "live": "live/39/index.html",
+"code": "",
 "colors": [
 "#5B7F6A",
 "#C98B5A",
@@ -1005,6 +1044,7 @@ window.DESIGNS = [
 "thumb": "media/40.jpg",
 "dur": 12,
 "live": "live/40/index.html",
+"code": "",
 "colors": [
 "#8C1C3B",
 "#C9A15B",
@@ -1032,6 +1072,7 @@ window.DESIGNS = [
 "thumb": "media/41.jpg",
 "dur": 10,
 "live": "live/41/index.html",
+"code": "",
 "colors": [
 "#0071E3",
 "#FF9F0A",
@@ -1059,6 +1100,7 @@ window.DESIGNS = [
 "thumb": "media/42.jpg",
 "dur": 10,
 "live": "live/42/index.html",
+"code": "",
 "colors": [
 "#7C5CFF",
 "#22D3EE",
@@ -1086,6 +1128,7 @@ window.DESIGNS = [
 "thumb": "media/43.jpg",
 "dur": 13,
 "live": "live/43/index.html",
+"code": "",
 "colors": [
 "#FF5C39",
 "#4ADE80",
@@ -1113,6 +1156,7 @@ window.DESIGNS = [
 "thumb": "media/44.jpg",
 "dur": 12,
 "live": "live/44/index.html",
+"code": "",
 "colors": [
 "#8C6A3F",
 "#B8925A",
@@ -1140,6 +1184,7 @@ window.DESIGNS = [
 "thumb": "media/45.jpg",
 "dur": 13,
 "live": "live/45/index.html",
+"code": "",
 "colors": [
 "#A855F7",
 "#F472B6",
@@ -1167,6 +1212,7 @@ window.DESIGNS = [
 "thumb": "media/46.jpg",
 "dur": 11,
 "live": "live/46/index.html",
+"code": "",
 "colors": [
 "#E30613",
 "#0A0A0A",
@@ -1194,6 +1240,7 @@ window.DESIGNS = [
 "thumb": "media/47.jpg",
 "dur": 13,
 "live": "live/47/index.html",
+"code": "",
 "colors": [
 "#3B82F6",
 "#F59E0B",
@@ -1221,6 +1268,7 @@ window.DESIGNS = [
 "thumb": "media/48.jpg",
 "dur": 13,
 "live": "live/48/index.html",
+"code": "",
 "colors": [
 "#D4AF37",
 "#F5F1E8",
@@ -1248,6 +1296,7 @@ window.DESIGNS = [
 "thumb": "media/49.jpg",
 "dur": 10,
 "live": "live/49/index.html",
+"code": "",
 "colors": [
 "#B5502B",
 "#1F6F78",
@@ -1275,6 +1324,7 @@ window.DESIGNS = [
 "thumb": "media/50.jpg",
 "dur": 13,
 "live": "live/50/index.html",
+"code": "",
 "colors": [
 "#0F9D8A",
 "#FFB84D",
@@ -1302,6 +1352,7 @@ window.DESIGNS = [
 "thumb": "media/51.jpg",
 "dur": 8,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/apps/chatorigin/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/apps/chatorigin",
 "colors": [],
 "fonts": []
 },
@@ -1321,6 +1372,7 @@ window.DESIGNS = [
 "thumb": "media/52.jpg",
 "dur": 13,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/apps/navigator/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/apps/navigator",
 "colors": [],
 "fonts": []
 },
@@ -1340,6 +1392,7 @@ window.DESIGNS = [
 "thumb": "media/53.jpg",
 "dur": 13,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/apps/traveler/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/apps/traveler",
 "colors": [],
 "fonts": []
 },
@@ -1359,6 +1412,7 @@ window.DESIGNS = [
 "thumb": "media/54.jpg",
 "dur": 10,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/apps/AISales/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/apps/AISales",
 "colors": [],
 "fonts": []
 },
@@ -1378,6 +1432,7 @@ window.DESIGNS = [
 "thumb": "media/55.jpg",
 "dur": 13,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/saas/SaaSyDark/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/saas/SaaSyDark",
 "colors": [],
 "fonts": []
 },
@@ -1397,6 +1452,7 @@ window.DESIGNS = [
 "thumb": "media/56.jpg",
 "dur": 13,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/saas/pixaai/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/saas/pixaai",
 "colors": [],
 "fonts": []
 },
@@ -1416,6 +1472,7 @@ window.DESIGNS = [
 "thumb": "media/57.jpg",
 "dur": 11,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/saas/SaaS-AI/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/saas/SaaS-AI",
 "colors": [],
 "fonts": []
 },
@@ -1435,6 +1492,7 @@ window.DESIGNS = [
 "thumb": "media/58.jpg",
 "dur": 7,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/saas/finance/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/saas/finance",
 "colors": [],
 "fonts": []
 },
@@ -1454,6 +1512,7 @@ window.DESIGNS = [
 "thumb": "media/59.jpg",
 "dur": 8,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/saas/CelestialSaaS/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/saas/CelestialSaaS",
 "colors": [],
 "fonts": []
 },
@@ -1473,6 +1532,7 @@ window.DESIGNS = [
 "thumb": "media/60.jpg",
 "dur": 10,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/restaurant/bistro/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/restaurant/bistro",
 "colors": [],
 "fonts": []
 },
@@ -1492,6 +1552,7 @@ window.DESIGNS = [
 "thumb": "media/61.jpg",
 "dur": 10,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/restaurant/nutrio/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/restaurant/nutrio",
 "colors": [],
 "fonts": []
 },
@@ -1511,6 +1572,7 @@ window.DESIGNS = [
 "thumb": "media/62.jpg",
 "dur": 10,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/others/carwash/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/others/carwash",
 "colors": [],
 "fonts": []
 },
@@ -1530,6 +1592,7 @@ window.DESIGNS = [
 "thumb": "media/63.jpg",
 "dur": 9,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/realestate/brickproperty/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/realestate/brickproperty",
 "colors": [],
 "fonts": []
 },
@@ -1549,6 +1612,7 @@ window.DESIGNS = [
 "thumb": "media/64.jpg",
 "dur": 8,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/products/scooter/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/products/scooter",
 "colors": [],
 "fonts": []
 },
@@ -1568,6 +1632,7 @@ window.DESIGNS = [
 "thumb": "media/65.jpg",
 "dur": 10,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/law/lawgroup/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/law/lawgroup",
 "colors": [],
 "fonts": []
 },
@@ -1587,6 +1652,7 @@ window.DESIGNS = [
 "thumb": "media/66.jpg",
 "dur": 12,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/law/lawfire/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/law/lawfire",
 "colors": [],
 "fonts": []
 },
@@ -1606,6 +1672,7 @@ window.DESIGNS = [
 "thumb": "media/67.jpg",
 "dur": 9,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/portfolio/Jamie-portfolio/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/portfolio/Jamie-portfolio",
 "colors": [],
 "fonts": []
 },
@@ -1625,6 +1692,7 @@ window.DESIGNS = [
 "thumb": "media/68.jpg",
 "dur": 10,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/ngo/project-africa/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/ngo/project-africa",
 "colors": [],
 "fonts": []
 },
@@ -1644,6 +1712,7 @@ window.DESIGNS = [
 "thumb": "media/69.jpg",
 "dur": 8,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/portfolio/bella/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/portfolio/bella",
 "colors": [],
 "fonts": []
 },
@@ -1663,6 +1732,7 @@ window.DESIGNS = [
 "thumb": "media/70.jpg",
 "dur": 7,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/portfolio/notion/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/portfolio/notion",
 "colors": [],
 "fonts": []
 },
@@ -1682,6 +1752,7 @@ window.DESIGNS = [
 "thumb": "media/71.jpg",
 "dur": 7,
 "live": "../designs/external/PaulleDemon--awesome-landing-pages/src/portfolio/jrdev/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/PaulleDemon--awesome-landing-pages/src/portfolio/jrdev",
 "colors": [],
 "fonts": []
 },
@@ -1701,6 +1772,7 @@ window.DESIGNS = [
 "thumb": "media/72.jpg",
 "dur": 7,
 "live": "../designs/external/tailwindtoolbox--Landing-Page/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/tailwindtoolbox--Landing-Page",
 "colors": [],
 "fonts": []
 },
@@ -1720,6 +1792,7 @@ window.DESIGNS = [
 "thumb": "media/73.jpg",
 "dur": 10,
 "live": "../designs/external/themesberg--landwind/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/themesberg--landwind",
 "colors": [],
 "fonts": []
 },
@@ -1739,6 +1812,7 @@ window.DESIGNS = [
 "thumb": "media/74.jpg",
 "dur": 8,
 "live": "../designs/external/creativetimofficial--awesome-landing-page/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/creativetimofficial--awesome-landing-page",
 "colors": [],
 "fonts": []
 },
@@ -1758,6 +1832,7 @@ window.DESIGNS = [
 "thumb": "media/75.jpg",
 "dur": 8,
 "live": "../designs/external/creativetimofficial--awesome-landing-page/phone_app.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/creativetimofficial--awesome-landing-page",
 "colors": [],
 "fonts": []
 },
@@ -1777,6 +1852,7 @@ window.DESIGNS = [
 "thumb": "media/76.jpg",
 "dur": 9,
 "live": "../designs/external/creativetimofficial--awesome-landing-page/web_app.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/creativetimofficial--awesome-landing-page",
 "colors": [],
 "fonts": []
 },
@@ -1796,6 +1872,7 @@ window.DESIGNS = [
 "thumb": "media/77.jpg",
 "dur": 8,
 "live": "../designs/external/StartBootstrap--startbootstrap-landing-page/dist/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/StartBootstrap--startbootstrap-landing-page/dist",
 "colors": [],
 "fonts": []
 },
@@ -1815,6 +1892,7 @@ window.DESIGNS = [
 "thumb": "media/78.jpg",
 "dur": 12,
 "live": "../designs/external/StartBootstrap--startbootstrap-agency/dist/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/StartBootstrap--startbootstrap-agency/dist",
 "colors": [],
 "fonts": []
 },
@@ -1834,6 +1912,7 @@ window.DESIGNS = [
 "thumb": "media/79.jpg",
 "dur": 8,
 "live": "../designs/external/StartBootstrap--startbootstrap-creative/dist/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/StartBootstrap--startbootstrap-creative/dist",
 "colors": [],
 "fonts": []
 },
@@ -1853,6 +1932,7 @@ window.DESIGNS = [
 "thumb": "media/80.jpg",
 "dur": 8,
 "live": "../designs/external/StartBootstrap--startbootstrap-grayscale/dist/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/StartBootstrap--startbootstrap-grayscale/dist",
 "colors": [],
 "fonts": []
 },
@@ -1872,6 +1952,7 @@ window.DESIGNS = [
 "thumb": "media/81.jpg",
 "dur": 7,
 "live": "../designs/external/StartBootstrap--startbootstrap-freelancer/dist/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/StartBootstrap--startbootstrap-freelancer/dist",
 "colors": [],
 "fonts": []
 },
@@ -1891,6 +1972,7 @@ window.DESIGNS = [
 "thumb": "media/82.jpg",
 "dur": 9,
 "live": "../designs/external/StartBootstrap--startbootstrap-resume/dist/index.html",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external/StartBootstrap--startbootstrap-resume/dist",
 "colors": [],
 "fonts": []
 },
@@ -1910,6 +1992,7 @@ window.DESIGNS = [
 "thumb": "media/83.jpg",
 "dur": 13,
 "live": "https://shadcn-landing-page.vercel.app",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external",
 "colors": [],
 "fonts": []
 },
@@ -1929,6 +2012,7 @@ window.DESIGNS = [
 "thumb": "media/84.jpg",
 "dur": 13,
 "live": "https://next-saas-starter-ashy.vercel.app/",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external",
 "colors": [],
 "fonts": []
 },
@@ -1948,6 +2032,7 @@ window.DESIGNS = [
 "thumb": "media/85.jpg",
 "dur": 12,
 "live": "https://react-landing-page-template-93ne.vercel.app/",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external",
 "colors": [],
 "fonts": []
 },
@@ -1967,6 +2052,7 @@ window.DESIGNS = [
 "thumb": "media/86.jpg",
 "dur": 7,
 "live": "https://creativedesignsguru.com/demo/nextjs-landing-page/",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external",
 "colors": [],
 "fonts": []
 },
@@ -1986,6 +2072,7 @@ window.DESIGNS = [
 "thumb": "media/87.jpg",
 "dur": 7,
 "live": "https://tailblocks.cc",
+"code": "https://github.com/adam-team/site-builder/tree/main/designs/external",
 "colors": [],
 "fonts": []
 },
@@ -2005,6 +2092,7 @@ window.DESIGNS = [
 "thumb": "media/88.jpg",
 "dur": 9,
 "live": "https://open.cruip.com",
+"code": "",
 "colors": [],
 "fonts": []
 },
@@ -2024,6 +2112,7 @@ window.DESIGNS = [
 "thumb": "media/89.jpg",
 "dur": 8,
 "live": "https://simple.cruip.com",
+"code": "",
 "colors": [],
 "fonts": []
 }
